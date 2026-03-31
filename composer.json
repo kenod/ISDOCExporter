@@ -1,0 +1,64 @@
+{
+  "name": "kenod/isdoc-exporter",
+  "description": "PHP library for generating ISDOC/ISDOCX invoices according to the Czech ISDOC standard version 6.0.2",
+  "type": "library",
+  "keywords": [
+    "isdoc",
+    "isdocx",
+    "invoice",
+    "xml",
+    "faktura",
+    "czech",
+    "accounting",
+    "e-invoice"
+  ],
+  "version": "1.0.2",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Petr Danek",
+      "email": "danek@chci-www.cz",
+      "homepage": "https://www.danekpetr.cz"
+    }
+  ],
+  "require": {
+    "php": "^8.3 || ^8.4 || ^8.5",
+    "ext-dom": "*",
+    "ext-bcmath": "*"
+  },
+  "require-dev": {
+    "slevomat/coding-standard": "^8.15",
+    "squizlabs/php_codesniffer": "^3.11",
+    "phpstan/phpstan": "^2.0",
+    "phpunit/phpunit": "^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kenod\\IsdocExporter\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Kenod\\IsdocExporter\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "phpcs": "phpcs --standard=phpcs.xml",
+    "phpcbf": "phpcbf --standard=phpcs.xml",
+    "phpstan": "phpstan analyse -c phpstan.neon",
+    "test": "phpunit",
+    "check": [
+      "@phpcs",
+      "@phpstan",
+      "@test"
+    ]
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}

@@ -1,0 +1,46 @@
+# Composer
+/vendor/
+composer.lock
+
+# IDE
+/.idea/
+/.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# PHP
+*.cache
+.phpunit.result.cache
+.phpcs-cache
+.phpstan-cache
+/.phpunit.cache/
+
+# Generated files
+*.log
+
+# Test output
+/build/
+/coverage/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Examples output
+/examples/*.isdoc
+/examples/*.xml
+
+# Temporary files
+*.tmp
+*.bak
+*.old
+nul
+
+# Source data
+/podklady/
+
+# Claude
+/.claude/
