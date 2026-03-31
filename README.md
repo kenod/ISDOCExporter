@@ -1,6 +1,10 @@
 # ISDOC Exporter
 
+[![Packagist](https://img.shields.io/packagist/v/kenod/isdoc-exporter)](https://packagist.org/packages/kenod/isdoc-exporter)
+
 PHP library for generating electronic invoices in the [ISDOC](https://isdoc.cz/) format (version 6.0.2) -- the Czech national standard for electronic invoicing.
+
+**[Interactive Demo](https://fakturasnadno.cz/)** | [Packagist](https://packagist.org/packages/kenod/isdoc-exporter) | [Dokumentace v cestine](README.cs.md)
 
 ## Features
 
